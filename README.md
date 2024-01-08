@@ -46,8 +46,20 @@ The language have packages for multiple languages for adapting april to the want
 - Written in python3
 - Makes use of FASTAPI
 
-## Getting Started
 
+## Features
+
+- Easy install
+- Simple
+- Efficient
+- Inbuild ratelimiting features (if req)
+- Auto-Generated API Docs (if req)
+- Banned IPs
+- Disallow Private IPs (if req)
+- Cross platform
+
+
+## Getting Started
 
 ### Prerequisites
 
@@ -100,6 +112,9 @@ Get the version of april:
 april -v
 ```
 
+## Support
+
+For support, join our discord server https://discord.gg/PXMSPJXhXd
 
 ## Roadmap
 

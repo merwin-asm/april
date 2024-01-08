@@ -112,6 +112,15 @@ Get the version of april:
 april -v
 ```
 
+# Packages for languages
+
+| Language   | Link                                      |
+|------------|-------------------------------------------|
+| Python     | [](g/doc/) |
+
+
+
+
 ## Support
 
 For support, join our discord server https://discord.gg/PXMSPJXhXd

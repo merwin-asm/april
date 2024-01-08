@@ -15,7 +15,7 @@
   </p>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/merwin-asm/april?color=dark-green) ![Forks](https://img.shields.io/github/forks/merwin-asm/april?style=social) ![Stargazers](https://img.shields.io/github/stars/merwin-asm/april?style=social) ![Issues](https://img.shields.io/github/issues/merwin-asm/april) ![License](https://img.shields.io/github/license/merwin-asm/april) 
+![Contributors](https://img.shields.io/github/contributors/merwin-asm/april?color=dark-green) ![Forks](https://img.shields.io/github/forks/merwin-asm/april?style=social) ![Stargazers](https://img.shields.io/github/stars/merwin-asm/april?style=social) ![Issues](https://img.shields.io/github/issues/merwin-asm/april) ![License](https://img.shields.io/github/license/merwin-asm/april) <p align="right"> <img src="https://komarev.com/ghpvc/?username=merwin-asm-april&label=Project%20views&color=0e75b6&style=flat" /> </p>
 
 ## Table Of Contents
 

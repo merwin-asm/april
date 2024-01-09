@@ -6,7 +6,7 @@
     A Programming Language to make API's !!
     <br/>
     <br/>
-    <a href="https://github.com/merwin-asm/april/blob/main/README.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/merwin-asm/april/blob/main/docs.md"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
     <a href="https://github.com/merwin-asm/april/issues">Report Bug</a>

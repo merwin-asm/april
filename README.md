@@ -119,7 +119,34 @@ april -v
 | Python     | [](g/doc/) |
 
 
+# About making a package yourself
+- The packages are used to connect the april program and the program dedicated to the endpoint.
+- When the program pointed to the endpoint is called the program is suplied with a call ID in the form of commandline argument. The program can access details related to the request in the json file "." + call ID + ".input". And the output of the program can be put in to the json file "." + call ID + ".output".
+## About the input and output files
+### **Input File** : 
+- Json file
+- Filename : "." + call ID + ".input"
+- Contains information about the request ,
+  ```
+  {
+  "request" : dict containing info of the request,
+  "input" : {"varible_name_in_the_url" : "value", ....}
+  }
+  ```
+  - The 'request' dict have all the same keys as in [starlette.requests](https://www.starlette.io/requests/)
 
+### **Output File** :
+- Json file
+- Filename : "." + call ID + ".output"
+- Should contain information about the response ,
+```
+{
+"headers" : <headers for the response>,
+"status" : <status code>,
+"output" : "the data to be send out to the user"
+}
+```
+- The output and input files automatically gets deleted when the data in the output file is gained.
 
 ## Support
 

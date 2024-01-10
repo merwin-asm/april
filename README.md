@@ -114,9 +114,19 @@ april -v
 
 # Packages for languages
 
-| Language   | Link                                      |
-|------------|-------------------------------------------|
-| Python     | [](g/doc/) |
+| Language   | Link                                      | Creator             | Info |
+|------------|-------------------------------------------|---------------------|--------|
+| Python     | [Link](https://github.com/merwin-asm/april/tree/main/python) | merwin-asm | |
+| Lua     | [Link](https://github.com/merwin-asm/april/tree/main/lua) | merwin-asm | |
+| JS     | [Link](https://github.com/merwin-asm/april/tree/main/js) | merwin-asm | |
+| TS     | [Link](https://github.com/merwin-asm/april/tree/main/ts) | merwin-asm | |
+| Go     | [Link](https://github.com/merwin-asm/april/tree/main/go) | merwin-asm | |
+| Rust     | [Link](https://github.com/merwin-asm/april/tree/main/rust) | merwin-asm | |
+| PHP     | [Link](https://github.com/merwin-asm/april/tree/main/php) | merwin-asm | |
+| Dart     | [Link](https://github.com/merwin-asm/april/tree/main/dart) | merwin-asm | |
+| C     | [Link](https://github.com/merwin-asm/april/tree/main/c) | merwin-asm | |
+| C++     | [Link](https://github.com/merwin-asm/april/tree/main/cpp) | merwin-asm | |
+| Ruby     | [Link](https://github.com/merwin-asm/april/tree/main/ruby) | merwin-asm | |
 
 
 # About making a package yourself

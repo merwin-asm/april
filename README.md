@@ -116,17 +116,17 @@ april -v
 
 | Language   | Link                                      | Creator             | Info |
 |------------|-------------------------------------------|---------------------|--------|
-| Python     | [Link](https://github.com/merwin-asm/april/tree/main/python) | merwin-asm | |
-| Lua     | [Link](https://github.com/merwin-asm/april/tree/main/lua) | merwin-asm | |
-| JS     | [Link](https://github.com/merwin-asm/april/tree/main/js) | merwin-asm | |
-| TS     | [Link](https://github.com/merwin-asm/april/tree/main/ts) | merwin-asm | |
-| Go     | [Link](https://github.com/merwin-asm/april/tree/main/go) | merwin-asm | |
-| Rust     | [Link](https://github.com/merwin-asm/april/tree/main/rust) | merwin-asm | |
-| PHP     | [Link](https://github.com/merwin-asm/april/tree/main/php) | merwin-asm | |
-| Dart     | [Link](https://github.com/merwin-asm/april/tree/main/dart) | merwin-asm | |
-| C     | [Link](https://github.com/merwin-asm/april/tree/main/c) | merwin-asm | |
-| C++     | [Link](https://github.com/merwin-asm/april/tree/main/cpp) | merwin-asm | |
-| Ruby     | [Link](https://github.com/merwin-asm/april/tree/main/ruby) | merwin-asm | |
+| Python     | [Link](https://github.com/merwin-asm/april/tree/main/python) | (merwin-asm)[https://github.com/merwin-asm/] |(Link)[https://github.com/merwin-asm/april/blob/main/python/info.md] |
+| Lua     | [Link](https://github.com/merwin-asm/april/tree/main/lua) | (merwin-asm)[https://github.com/merwin-asm/] | (Link)[https://github.com/merwin-asm/april/blob/main/lua/info.md]|
+| JS     | [Link](https://github.com/merwin-asm/april/tree/main/js) | (axorax)[https://github.com/axorax/] | (Link)[https://github.com/merwin-asm/april/blob/main/js/info.md]|
+| TS     | [Link](https://github.com/merwin-asm/april/tree/main/ts) | (merwin-asm)[https://github.com/merwin-asm/] | (Link)[https://github.com/merwin-asm/april/blob/main/ts/info.md]|
+| Go     | [Link](https://github.com/merwin-asm/april/tree/main/go) | (merwin-asm)[https://github.com/merwin-asm/] | (Link)[https://github.com/merwin-asm/april/blob/main/go/info.md]|
+| Rust     | [Link](https://github.com/merwin-asm/april/tree/main/rust) | (merwin-asm)[https://github.com/merwin-asm/] | (Link)[https://github.com/merwin-asm/april/blob/main/rust/info.md]|
+| PHP     | [Link](https://github.com/merwin-asm/april/tree/main/php) | (merwin-asm)[https://github.com/merwin-asm/] | (Link)[https://github.com/merwin-asm/april/blob/main/php/info.md]|
+| Dart     | [Link](https://github.com/merwin-asm/april/tree/main/dart) | (merwin-asm)[https://github.com/merwin-asm/]| (Link)[https://github.com/merwin-asm/april/blob/main/dart/info.md]|
+| C     | [Link](https://github.com/merwin-asm/april/tree/main/c) | (merwin-asm)[https://github.com/merwin-asm/] | (Link)[https://github.com/merwin-asm/april/blob/main/c/info.md]|
+| C++     | [Link](https://github.com/merwin-asm/april/tree/main/cpp) | (merwin-asm)[https://github.com/merwin-asm/] | (Link)[https://github.com/merwin-asm/april/blob/main/cpp/info.md]|
+| Ruby     | [Link](https://github.com/merwin-asm/april/tree/main/ruby) | (merwin-asm)[https://github.com/merwin-asm/] | (Link)[https://github.com/merwin-asm/april/blob/main/ruby/info.md]|
 
 
 # About making a package yourself

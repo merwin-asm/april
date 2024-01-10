@@ -1,6 +1,6 @@
 Run the example using the command: 
 ```
-cargo run.
+cargo run
 ```
 
 Make sure to add the necessary dependencies to your Cargo.toml file:

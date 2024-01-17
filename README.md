@@ -132,7 +132,7 @@ april -v
 
 # About making a package yourself
 - The packages are used to connect the april program and the program dedicated to the endpoint.
-- When the program pointed to the endpoint is called the program is suplied with a call ID in the form of commandline argument. The program can access details related to the request in the json file "." + call ID + ".input". And the output of the program can be put in to the json file "." + call ID + ".output".
+- When the program pointed to the endpoint is called the program is suplied with a call ID in the form of commandline argument (last argument). The program can access details related to the request in the json file "." + call ID + ".input". And the output of the program can be put in to the json file "." + call ID + ".output".
 ## About the input and output files
 ### **Input File** : 
 - Json file

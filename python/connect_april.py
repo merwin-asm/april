@@ -11,10 +11,10 @@ import sys
 
 
 class April:
-    def __init__():
+    def __init__(self):
         pass
 
-    def recv_request():
+    def recv_request(self):
         n = sys.argv[1]
         f = open("." + str(current_id) + ".input", "r")
         d = json.loads(f.read())
@@ -22,7 +22,7 @@ class April:
 
         return d
 
-    def send_response(response):
+    def send_response(self, response):
         n = sys.argv[1]
         f = "." + str(n) + ".output"
         f = open(f, "w")

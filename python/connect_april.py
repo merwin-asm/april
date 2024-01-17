@@ -15,7 +15,7 @@ class April:
         pass
 
     def recv_request(self):
-        n = sys.argv[1]
+        n = sys.argv[-1]
         f = open("." + str(current_id) + ".input", "r")
         d = json.loads(f.read())
         f.close()
@@ -23,7 +23,7 @@ class April:
         return d
 
     def send_response(self, response):
-        n = sys.argv[1]
+        n = sys.argv[-1]
         f = "." + str(n) + ".output"
         f = open(f, "w")
         f.write(json.dumps(response))

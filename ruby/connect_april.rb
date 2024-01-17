@@ -4,7 +4,7 @@ require 'json'
 
 module ConnectApril
   def self.recv_request
-    n = ARGV[0]
+    n = ARGV[-1]
     file_path = ".#{n}.input"
 
     begin
@@ -17,7 +17,7 @@ module ConnectApril
   end
 
   def self.send_response(response)
-    n = ARGV[0]
+    n = ARGV[-1]
     file_path = ".#{n}.output"
 
     begin

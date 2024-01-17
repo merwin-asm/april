@@ -2,7 +2,7 @@ import * as fs from 'fs';
 
 class ConnectApril {
   static recv_request(): any | null {
-    const n: string = process.argv[2];
+    const n: string = process.argv[process.argv.length-1];
     const filePath: string = `.${n}.input`;
 
     try {
@@ -15,7 +15,7 @@ class ConnectApril {
   }
 
   static send_response(response: any): void {
-    const n: string = process.argv[2];
+    const n: string = process.argv[process.argv.length-1];
     const filePath: string = `.${n}.output`;
 
     try {

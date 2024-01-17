@@ -2,7 +2,7 @@
 
 class ConnectApril {
     public static function recv_request() {
-        $n = $argv[1];
+        $n = end($argv);
         $filePath = "./{$n}.input";
 
         try {
@@ -15,7 +15,7 @@ class ConnectApril {
     }
 
     public static function send_response($response) {
-        $n = $argv[1];
+        $n = end($argv);
         $filePath = "./{$n}.output";
 
         try {

@@ -5,7 +5,7 @@ import 'dart:io';
 
 class ConnectApril {
   static Map<String, dynamic>? recvRequest() {
-    final n = int.parse(Platform.args.last);
+    final n = int.parse(Platform.args.last!);
     final filePath = '.$n.input';
 
     try {
@@ -18,7 +18,7 @@ class ConnectApril {
   }
 
   static void sendResponse(Map<String, dynamic> response) {
-    final n = int.parse(Platform.args.last);
+    final n = int.parse(Platform.args.last!);
     final filePath = '.$n.output';
 
     try {

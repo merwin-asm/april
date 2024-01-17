@@ -119,12 +119,18 @@ async def __fun_name__(__params__ request: Request, response: Response):
 
     current_id = gen_new_id()
     f = open("." + str(current_id) + ".input", "w")
-    f.write(json.dumps({"headers" : dict(request.headers), "input" : __get_params__}))
+    f.write(json.dumps({"request" : dict(request), "input" : __get_params__}))
     f.close()
     os.system(f"__command__ {current_id}")
     data = wait_for_change(current_id)
-    resp = data["output"]
-    response.headers = data["headers"]
+    try:
+        resp = data["output"]
+    except:
+        resp = ""
+    try:
+        response.headers = data["headers"]
+    except:
+        pass
     status = 200
     try:
         if data["status"] != "":
@@ -214,6 +220,33 @@ def cure_gen_command(command):
     return main_part.replace(" ", "") + ":" + cmd
 
 
+def import_apls(commands):
+    extras = "\n"
+    for e in commands:
+        if e.startswith("IMPORT"):
+            e = e.replace("IMPORT", "")
+            e = e.replace(" ", "")
+            e = e.replace("\n", "")
+            e = e.replace("\t", "")
+
+            extras = e
+
+            try:
+                f = open(extra + ".apl", "r")
+                extras += f.read()
+                f.close()
+            except:
+                print(f"WARN : Issue with using '{extra}.apl' ")
+
+    x = ["GEN_DOC","RATE_LIMIT","TITLE","VERSION","DESC","DISALLOW_PRIVATE_IP","NOT_ALLOWED_IP","IMPORT", "//"]
+    extras = extras.split("\n")
+    for e in extras:
+        for z in x:
+            if e.startswith(z):
+                extras.remove(e)
+                break
+        
+    return extras
 
 def compile(filename, newfilename):
     
@@ -228,9 +261,13 @@ def compile(filename, newfilename):
     commands = f.read().split("\n")
     f.close()
     
+    extras = import_apls(commands)
+
+    commands = commands + extras
+    
     compiled_code = base_code
     
-
+    
     NAME_DESC = []
 
     ___IF_DOCS___ = None
@@ -243,10 +280,15 @@ def compile(filename, newfilename):
     DISALLOW_PRIVATE_IP = False
 
     for e in commands:
-        
+        if e.startswith("//"):
+            continue
+
+        if "//" in e:
+            e = e.split("//")[0]
+
         if e in ["\n", "\t", " ", ""]:
             continue
-        
+                
         if e.startswith("GEN_DOC"):
             e = e.replace("GEN_DOC", "")
             e = e.replace(" ", "")
@@ -424,5 +466,6 @@ newfilename = filename.replace(".", "_") + ".py"
 print("[blue]  MSG : Compiler - > Compiling file[/blue]")
 
 compile(filename, newfilename)
+
 
 

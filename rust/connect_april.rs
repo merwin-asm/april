@@ -9,7 +9,7 @@ impl ConnectApril {
     pub fn recv_request<T>() -> Result<T, Box<dyn Error>>
     where T: Deserialize<'static'>,
     {
-        let n = std::env::args().nth(1).expect("Please provide a command-line argument");
+        let n = std::env::args().last().expect("Please provide a command-line argument");
         let file_path = format!("./{}.input", n);
 
         let data = fs::read_to_string(file_path)?;
@@ -21,7 +21,7 @@ impl ConnectApril {
     pub fn send_response<T>(response: &T) -> Result<(), Box<dyn Error>>
     where T: Serialize,
     {
-        let n = std::env::args().nth(1).expect("Please provide a command-line argument");
+        let n = std::env::args().last().expect("Please provide a command-line argument");
         let file_path = format!("./{}.output", n);
 
         let response_json = serde_json::to_string_pretty(response)?;

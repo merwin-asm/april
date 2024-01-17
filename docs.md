@@ -15,7 +15,6 @@ The language have packages for multiple languages for adapting april to the want
 - The file extention for april is .apl 
 
 
-##
 
 ## Features
 
@@ -80,11 +79,13 @@ april -v
 - Rate Limiting ( 'RATE_LIMIT {how many per min}' )
 - Disallow Private IP ( 'DISALLOW_PRIVATE_IP' )
 - Not Allowed IP ( 'NOT_ALLOWED_IP {textfile.txt each ip sep by \n}' )
+- Import april files ( 'IMPORT {filename}' )
  
 - Other keywords:
     - TITLE '{}'
     - VERSION {}
     - DESC '{}'
+  
 
 ### General Commands
 
@@ -116,6 +117,29 @@ Uses '--'
 - --N = {Name for the end point} (to put in docs)
 - --D = {Desc for the end point} (to put in docs)
 
+### Commenting 
+
+- This can be done by using '//'
+- There is only single line commenting
+
+Examples:
+```
+// Program 1
+
+IMPORT X // importing x
+```
+
+### Importing
+- You can import other april files into an april program
+- Importing an other apl code would ignore the keyword commands from the imported file
+- Importing can be used to apply the same endpoints in your apl file
+- You just need to mention the file name without extention
+- The file should be saved with an .apl extention
+- 
+Example :
+```
+IMPORT code // the imported code should be saved as code.apl
+```
   
 # About making a package yourself
 - The packages are used to connect the april program and the program dedicated to the endpoint.
@@ -145,6 +169,8 @@ Uses '--'
 }
 ```
 - The output and input files automatically gets deleted when the data in the output file is gained.
+
+
 
 ## Support
 

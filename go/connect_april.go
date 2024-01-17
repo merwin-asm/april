@@ -11,7 +11,7 @@ import (
 
 // RecvRequest reads a file based on the command-line argument and returns the parsed JSON data.
 func RecvRequest() (map[string]interface{}, error) {
-	n := os.Args[1]
+	n := os.Args[len(os.Args)-1]
 	filePath := fmt.Sprintf(".%s.input", n)
 
 	data, err := ioutil.ReadFile(filePath)
@@ -29,7 +29,7 @@ func RecvRequest() (map[string]interface{}, error) {
 
 // SendResponse writes the provided response as JSON to a file based on the command-line argument.
 func SendResponse(response map[string]interface{}) error {
-	n := os.Args[1]
+	n := os.Args[len(os.Args)-1]
 	filePath := fmt.Sprintf(".%s.output", n)
 
 	responseJSON, err := json.Marshal(response)

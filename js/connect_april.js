@@ -2,7 +2,7 @@ const fs = require('fs');
 
 class ConnectApril {
   static recv_request() {
-    const n = process.argv[2];
+    const n = process.argv[process.argv.length - 1];
     const filePath = `.${n}.input`;
 
     try {
@@ -15,7 +15,7 @@ class ConnectApril {
   }
 
   static send_response(response) {
-    const n = process.argv[2];
+    const n = process.argv[process.argv.length - 1];
     const filePath = `.${n}.output`;
 
     try {

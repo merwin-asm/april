@@ -1,7 +1,7 @@
 local connect_april = {}
 
 function connect_april.recv_request()
-    local n = arg[1]
+    local n = arg[#arg]
     local filePath = '.' .. n .. '.input'
 
     local file = io.open(filePath, 'r')
@@ -16,7 +16,7 @@ function connect_april.recv_request()
 end
 
 function connect_april.send_response(response)
-    local n = arg[1]
+    local n = arg[#arg]
     local filePath = '.' .. n .. '.output'
 
     local file, err = io.open(filePath, 'w')

@@ -1,0 +1,232 @@
+:root {
+    --body-bg-light: #fff;
+    --nav-bg-light: #ccbcbc;
+    --body-bg-dark: #123; /* Modify as needed */
+    --nav-bg-dark: #234;  /* Modify as needed */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: system-ui;
+}
+
+body {
+    margin: 0;
+    font-size: 1.25rem;
+    background: var(--body-bg-light);
+    padding-inline-start: 20rem;
+    color: black;
+    transition: background-color 0.5s ease;
+}
+
+nav {
+    background: var(--nav-bg-light);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-block: 2rem;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.nav-list a {
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+.nav-list li {
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    margin-inline: 1rem 0;
+}
+
+.nav-list li.active {
+    view-transition-name: nav;
+    display: block;
+    background: var(--body-bg-light);
+    position: relative;
+    z-index: -1;
+    border-radius: 100vw 0 0 100vw;
+}
+
+.nav-list li:hover {
+    background: var(--body-bg-light);
+}
+
+::view-transition-group(nav) {
+    animation-duration: 1s;
+}
+
+.nav-list li.active::before,
+.nav-list li.active::after {
+    --border-radius: 1rem;
+    content: "";
+    position: absolute;
+    width: var(--border-radius);
+    height: var(--border-radius);
+    right: 0rem;
+    background: var(--nav-bg-light);
+}
+
+.nav-list li.active::before {
+    border-radius: 0 0 var(--border-radius);
+    top: calc(var(--border-radius) * -1);
+    box-shadow: 5px 5px 0 5px var(--body-bg-light);
+}
+
+.nav-list li.active::after {
+    border-radius: 0 var(--border-radius) 0 0;
+    bottom: calc(var(--border-radius) * -1);
+    box-shadow: 5px -5px 0 5px var(--body-bg-light);
+}
+
+.nav-list li:nth-child(1) a {
+    view-transition-name: test;
+}
+
+.nav-list li:nth-child(2) a {
+    view-transition-name: test-2;
+}
+
+.nav-list li:nth-child(3) a {
+    view-transition-name: test-3;
+}
+
+.switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.round {
+    border-radius: 34px;
+}
+
+.light-mode {
+    background-image: url('light-icon.png'); /* Replace with your light mode icon */
+}
+
+.dark-mode {
+    background-image: url('dark-icon.png'); /* Replace with your dark mode icon */
+}
+
+body.dark-theme, body.dark-theme .nav-list li.active{
+    background: var(--body-bg-dark);
+    color: white;
+}
+
+body.dark-theme nav{
+    background: var(--nav-bg-dark);
+    color: white!important;
+}
+body.dark-theme a{
+    color:white
+}
+body.dark-theme .nav-list li:hover {
+    background: var(--body-bg-dark);
+}
+body.dark-theme .nav-list li.active::after, body.dark-theme .nav-list li.active::before{
+    
+    background-color: var(--body-nav-dark);
+}
+body.dark-theme .nav-list li.active::before {
+    border-radius: 0 0 var(--border-radius);
+    top: calc(var(--border-radius) * -1);
+    box-shadow: 5px 5px 0 5px var(--body-bg-dark);
+}
+
+body.dark-theme .nav-list li.active::after {
+    border-radius: 0 var(--border-radius) 0 0;
+    bottom: calc(var(--border-radius) * -1);
+    box-shadow: 5px -5px 0 5px var(--body-bg-dark);
+}
+.code{
+    background-color: #333;
+    padding: 3px;
+    border-radius: 10px;
+}
+.codeSnippet{
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #333;
+    color: white;
+    border-radius: 6px;
+}
+.content{
+    width:95%;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+table th {
+    text-align: left;
+    background-color: #f2f2f2;
+    color:black
+}

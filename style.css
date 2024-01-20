@@ -29,6 +29,8 @@ nav {
     bottom: 0;
     left: 0;
     padding-block: 2rem;
+    overflow: auto;
+    
 }
 
 .nav-list {

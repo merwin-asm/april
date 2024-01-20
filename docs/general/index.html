@@ -15,13 +15,13 @@
           <li><a href="../gettingstarted/">Getting Started</a></li>
           <li><a href="../cmdExamples/">Commandline examples</a></li>
           <li><a href="../key/">Key Words</a></li>
-          <li><a href="../general/">General Commands</a></li>
+          <li class="active"><a href="../general/">General Commands</a></li>
           <li><a href="../properties/">Properties</a></li>
           <li><a href="../import/">Importing</a></li>
           <li><a href="../newpackage/">Creating new package</a></li>
           <li><a href="../commenting/">Commenting</a></li>
           <li><a href="../packages/">Packages</a></li>
-          <li class="active"><a href="#" aria-current="page">Contibuting</a></li>
+          <li><a href="../contributing/">Contibuting</a></li>
           <li><a href="../support/">Support</a></li>
           <li><a href="../author/">Author</a></li>
           <li><a href="../license/">License</a></li>
@@ -35,14 +35,19 @@
                 <span class="slider round"></span>
             </label>
         </div>
-        <h1>Contributing</h1>
+        <h1>License</h1>
         <div class="content">
-            <p dir="auto">Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are <strong>greatly appreciated</strong>.</p>
-            <ul dir="auto">
-                <li>If you have suggestions for adding or removing projects, feel free to <a href="https://github.com/merwin-asm/april/issues/new">open an issue</a> to discuss it, or directly create a pull request after you edit the <em>README.md</em> file with necessary changes.</li>
-                <li>Please make sure you check your spelling and grammar.</li>
-                <li>Create individual PR for each suggestion.</li>
-            </ul>
+            <ul><li>General format:</li></ul>
+            <p>&lt;request_type eg: get,post..&gt;(&lt;the api endpoint, use '{var-name}' when there is a variable in the endpoint url eg: '/home/page/{}'&gt;) :
+            </p>
+            <h3>Examples</h3>
+            <h4>Making a GET end point:</h4>
+            <div class="codeSnippet">get('/home') : python3 home.py</div>
+            <h4>Making a Get endpoint with 1/more variables:</h4>
+            <div class="codeSnippet">get('/home/page/{x}/para/{y}') : python3 home.py</div>
+            <p>Then the rest is done with the help of packages made for integrating april with them. You can find the list of packages <a href="../packages/">here</a>.</p>
+
+
         </div>
       </main>
     <script src="../../script.js"></script>

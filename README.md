@@ -126,7 +126,14 @@ april -v
 | PHP     | [Link](https://github.com/merwin-asm/april/tree/main/php) | [merwin-asm](https://github.com/merwin-asm/) | [Link](https://github.com/merwin-asm/april/blob/main/php/info.md)|
 | Dart     | [Link](https://github.com/merwin-asm/april/tree/main/dart) | [merwin-asm](https://github.com/merwin-asm/)| [Link](https://github.com/merwin-asm/april/blob/main/dart/)|
 | Ruby     | [Link](https://github.com/merwin-asm/april/tree/main/ruby) | [merwin-asm](https://github.com/merwin-asm/) | [Link](https://github.com/merwin-asm/april/blob/main/ruby/info.md)|
-
+| perl     | [Link](https://github.com/merwin-asm/april/tree/main/perl) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/perl/)|
+| c     | [Link](https://github.com/merwin-asm/april/tree/main/c) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/c/)|
+| swift     | [Link](https://github.com/merwin-asm/april/tree/main/swift) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/swift/)|
+| r     | [Link](https://github.com/merwin-asm/april/tree/main/r) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/r/)|
+| racket     | [Link](https://github.com/merwin-asm/april/tree/main/racket) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/racket/)|
+| red     | [Link](https://github.com/merwin-asm/april/tree/main/red) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/red/)|
+| nim     | [Link](https://github.com/merwin-asm/april/tree/main/nim) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/nim/)|
+| zig     | [Link](https://github.com/merwin-asm/april/tree/main/zig) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/zig/)|
 
 # About making a package yourself
 - The packages are used to connect the april program and the program dedicated to the endpoint.

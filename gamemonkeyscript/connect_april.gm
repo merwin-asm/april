@@ -1,0 +1,34 @@
+class ConnectApril
+{
+    static recv_request()
+    {
+        n = system.getArg(system.getArgCount() - 1);
+        filePath = "." + string(n) + ".input";
+
+        try
+        {
+            data = file.readFile(filePath);
+            return json.parse(data);
+        }
+        catch (err)
+        {
+            print("Error: " + err);
+            return null;
+        }
+    }
+
+    static send_response(response)
+    {
+        n = system.getArg(system.getArgCount() - 1);
+        filePath = "." + string(n) + ".output";
+
+        try
+        {
+            file.writeFile(filePath, json.stringify(response));
+        }
+        catch (err)
+        {
+            print("Error: " + err);
+        }
+    }
+}

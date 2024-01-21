@@ -1,0 +1,25 @@
+class ConnectApril {
+    static func recv_request() -> Any {
+        n = convert_to_integer(command_line_arguments[command_line_arguments.length - 1]);
+        file_path = concatenate_strings(".", convert_to_string(n), ".input");
+
+        try {
+            data = read_file(file_path);
+            return parse_json(data);
+        } catch (err) {
+            print("Error: ", err);
+            return null;
+        }
+    }
+
+    static func send_response(response: Any) {
+        n = convert_to_integer(command_line_arguments[command_line_arguments.length - 1]);
+        file_path = concatenate_strings(".", convert_to_string(n), ".output");
+
+        try {
+            write_file(file_path, stringify_json(response));
+        } catch (err) {
+            print("Error: ", err);
+        }
+    }
+}

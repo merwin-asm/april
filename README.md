@@ -134,6 +134,20 @@ april -v
 | red     | [Link](https://github.com/merwin-asm/april/tree/main/red) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/red/)|
 | nim     | [Link](https://github.com/merwin-asm/april/tree/main/nim) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/nim/)|
 | zig     | [Link](https://github.com/merwin-asm/april/tree/main/zig) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/zig/)|
+| rpg     | [Link](https://github.com/merwin-asm/april/tree/main/rpg) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/rpg/)|
+| oak     | [Link](https://github.com/merwin-asm/april/tree/main/oak) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/oak/)|
+| matlab     | [Link](https://github.com/merwin-asm/april/tree/main/matlab) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/matlab/)|
+| lisp     | [Link](https://github.com/merwin-asm/april/tree/main/lisp) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/lisp/)|
+| kotlin     | [Link](https://github.com/merwin-asm/april/tree/main/kotlin) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/kotlin/)|
+| jai     | [Link](https://github.com/merwin-asm/april/tree/main/jai) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/jai/)|
+| hypertalk     | [Link](https://github.com/merwin-asm/april/tree/main/hypertalk) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/hypertalk/)|
+| haxe     | [Link](https://github.com/merwin-asm/april/tree/main/haxe) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/haxe/)|
+| haskell     | [Link](https://github.com/merwin-asm/april/tree/main/haskell) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/haskell/)|
+| groovy     | [Link](https://github.com/merwin-asm/april/tree/main/groovy) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/groovy/)|
+| f#     | [Link](https://github.com/merwin-asm/april/tree/main/f#) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/f#/)|
+| f-script     | [Link](https://github.com/merwin-asm/april/tree/main/f-script) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/f-script/)|
+| erlang     | [Link](https://github.com/merwin-asm/april/tree/main/erlang) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/erlang/)|
+| abc     | [Link](https://github.com/merwin-asm/april/tree/main/abc) | [axorax](https://github.com/axorax/) | [Link](https://github.com/merwin-asm/april/blob/main/abc/)|
 
 # About making a package yourself
 - The packages are used to connect the april program and the program dedicated to the endpoint.

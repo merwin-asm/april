@@ -1,0 +1,28 @@
+open "std.abh";
+import io;
+
+record ConnectApril {
+  public function recv_request() -> JSON {
+    n := to_int(to_str(arg(arg_count()-1)));
+    filePath := "." + to_str(n) + ".input";
+
+    try
+      data := read_file(filePath);
+      return json_parse(data);
+    catch e
+      print("Error: ", e);
+      return null;
+    end try;
+  }
+
+  public function send_response(response: JSON) -> Null {
+    n := to_int(to_str(arg(arg_count()-1)));
+    filePath := "." + to_str(n) + ".output";
+
+    try
+      write_file(filePath, json_stringify(response));
+    catch e
+      print("Error: ", e);
+    end try;
+  }
+}

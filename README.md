@@ -213,4 +213,4 @@ Distributed under the MIT License. See [LICENSE](https://github.com/merwin-asm/a
 ## Contributors
 
 * [Axorax](https://github.com/axorax)
-
+* [Bashamega](https://github.com/bashamega)

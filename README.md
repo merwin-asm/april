@@ -214,5 +214,5 @@ Distributed under the MIT License. See [LICENSE](https://github.com/merwin-asm/a
 
 | Name | GitHub | Instagram |
 | --- | --- | --- |
-| Axorax | https://github.com/axorax | https://www.instagram.com/axorax_ |
+| **Axorax** | https://github.com/axorax | [https://www.instagram.com/axorax_](https://www.instagram.com/axorax_) |
 | Bashamega | https://github.com/bashamega | - |

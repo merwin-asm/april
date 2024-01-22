@@ -26,7 +26,7 @@
   * [Installation](#installation)
 * [Usage](#usage)
 * [Packages](#Packages)
-* [Making yourown packages](#About-making-a-package-yourself)
+* [Making your own packages](#About-making-a-package-yourself)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -212,5 +212,7 @@ Distributed under the MIT License. See [LICENSE](https://github.com/merwin-asm/a
 
 ## Contributors
 
-* [Axorax](https://github.com/axorax)
-* [Bashamega](https://github.com/bashamega)
+| Name | GitHub | Instagram |
+| --- | --- | --- |
+| Axorax | https://github.com/axorax | https://www.instagram.com/axorax_ |
+| Bashamega | https://github.com/bashamega | - |

@@ -1,5 +1,4 @@
-// Import required packages
-IMPORT std_lib
+
 
 // Set API information
 TITLE 'Time API'
